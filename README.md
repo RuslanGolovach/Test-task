@@ -2,12 +2,12 @@
 
 ## `Макет:`
 
-[https://www.figma.com/file/LYaLkN4CII6CotTbIkKUKM/TestTask?node-id=0%3A1]
+https://www.figma.com/file/LYaLkN4CII6CotTbIkKUKM/TestTask?node-id=0%3A1
 
 ### `Вимоги:`
 
 - піксель перфект
 - верстка повина бути на реакті, (реакт можна створити через create-react-app )
-- сайдбар повинен занходитись в іншому файлі та окремій папці.
+- сайдбар повинен знаходитись в іншому файлі та окремій папці.
 - всі стилі задавати тільки за допомогою styled-components
 - стилі повинні бути в окремому файлі
