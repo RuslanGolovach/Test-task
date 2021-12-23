@@ -1,5 +1,5 @@
 import 'modern-normalize/modern-normalize.css';
-import SideBar from '../src/components/SideBar';
+import SideBar from './components/SideBar';
 
 function App() {
   return (
