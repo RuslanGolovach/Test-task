@@ -1,7 +1,7 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="logs" viewBox="0 0 30 32" >
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6842" d="M9.684 5.895h10.947c1.86 0 3.368 1.508 3.368 3.368v14.737c0 1.86-1.508 3.368-3.368 3.368h-10.947c-1.86 0-3.368-1.508-3.368-3.368v-14.737c0-1.86 1.508-3.368 3.368-3.368z"></path>
+<path  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6842" d="M9.684 5.895h10.947c1.86 0 3.368 1.508 3.368 3.368v14.737c0 1.86-1.508 3.368-3.368 3.368h-10.947c-1.86 0-3.368-1.508-3.368-3.368v-14.737c0-1.86 1.508-3.368 3.368-3.368z"></path>
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6842" d="M11.368 12.211h7.579"></path>
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6842" d="M11.368 17.263h7.579"></path>
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6842" d="M11.368 22.316h5.053"></path>
