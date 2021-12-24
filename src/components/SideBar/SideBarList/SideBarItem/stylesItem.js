@@ -27,7 +27,10 @@ const ActiveItem = styled(Item)`
     height: 32px;
     background-color: #ffc700;
   }
-  & svg {
+  & svg *[stroke] {
+    stroke: #ffc700;
+  }
+  & svg *[fill] {
     fill: #ffc700;
   }
 `;
