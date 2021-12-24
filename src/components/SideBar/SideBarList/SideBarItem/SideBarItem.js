@@ -1,7 +1,7 @@
 import React from 'react';
 import icons from './icons';
-import sprite from '../../../../icon/sprite.svg';
-// import { ReactComponent as IconLogs } from '../../../../icon/logs.svg';
+import SvgGenerator from './SvgGenerator';
+
 import {
   Item,
   IconWrapper,
@@ -12,19 +12,16 @@ import {
 
 const SideBarItem = ({ id, description, quantity, onClick, isActive }) => {
   const Li = isActive === id ? ActiveItem : Item;
+  const onLiClick = () => {
+    onClick(id);
+  };
 
   return (
-    <Li onClick={() => onClick(id)}>
+    <Li onClick={onLiClick}>
       <IconWrapper>
-        {/* <img src={icon} alt="" /> */}
-
-        <svg width="18" height="18">
-          <use xlinkHref={`${sprite}#${icons[description]}`} />
-        </svg>
-
+        <SvgGenerator id={icons[description]} color="red" />
         <Description>{description}</Description>
       </IconWrapper>
-
       <Quantity>{quantity}</Quantity>
     </Li>
   );

@@ -27,6 +27,9 @@ const ActiveItem = styled(Item)`
     height: 32px;
     background-color: #ffc700;
   }
+  & svg {
+    fill: #ffc700;
+  }
 `;
 
 const IconWrapper = styled.div`
