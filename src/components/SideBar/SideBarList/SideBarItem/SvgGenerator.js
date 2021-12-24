@@ -15,17 +15,17 @@ const SvgGenerator = ({ id }) => {
           <path
             d="M9 3.5L3.75 5.75L9 8L14.25 5.75L9 3.5Z"
             stroke="#36363D"
-            stroke-linejoin="round"
+            strokeLinejoin="round"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M4.95176 8.44098L3.55304 9.04043C3.3692 9.11922 3.25 9.29999 3.25 9.5C3.25 9.70002 3.3692 9.88079 3.55304 9.95958L8.80304 12.2096C8.92881 12.2635 9.07119 12.2635 9.19696 12.2096L14.447 9.95958C14.6308 9.88079 14.75 9.70002 14.75 9.5C14.75 9.29999 14.6308 9.11922 14.447 9.04043L13.0482 8.44098L11.7789 8.98496L12.9807 9.5L9 11.206L5.0193 9.5L6.22106 8.98496L4.95176 8.44098Z"
             fill="#36363D"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M4.95176 12.191L3.55304 12.7904C3.3692 12.8692 3.25 13.05 3.25 13.25C3.25 13.45 3.3692 13.6308 3.55304 13.7096L8.80304 15.9596C8.92881 16.0135 9.07119 16.0135 9.19696 15.9596L14.447 13.7096C14.6308 13.6308 14.75 13.45 14.75 13.25C14.75 13.05 14.6308 12.8692 14.447 12.7904L13.0482 12.191L11.7789 12.735L12.9807 13.25L9 14.956L5.0193 13.25L6.22106 12.735L4.95176 12.191Z"
             fill="#36363D"
           />
@@ -47,22 +47,22 @@ const SvgGenerator = ({ id }) => {
             rx="1"
             transform="matrix(1 0 0 -1 11 7.5)"
             stroke="#36363D"
-            stroke-linecap="round"
+            strokeLinecap="round"
           />
           <path
             d="M7 11.5H10C10.9428 11.5 11.4142 11.5 11.7071 11.7929C12 12.0858 12 12.5572 12 13.5V14.5C12 15.4428 12 15.9142 11.7071 16.2071C11.4142 16.5 10.9428 16.5 10 16.5H7V11.5Z"
             stroke="#36363D"
-            stroke-linecap="round"
+            strokeLinecap="round"
           />
           <path
             d="M7 7.5C7 6.55719 7 6.08579 6.70711 5.79289C6.41421 5.5 5.94281 5.5 5 5.5H4C3.05719 5.5 2.58579 5.5 2.29289 5.79289C2 6.08579 2 6.55719 2 7.5V11.5H7V7.5Z"
             stroke="#36363D"
-            stroke-linecap="round"
+            strokeLinecap="round"
           />
           <path
             d="M7 16.5H4C3.05719 16.5 2.58579 16.5 2.29289 16.2071C2 15.9142 2 15.4428 2 14.5V11.5H7V16.5Z"
             stroke="#36363D"
-            stroke-linecap="round"
+            strokeLinecap="round"
           />
         </svg>
       );
@@ -105,7 +105,7 @@ const SvgGenerator = ({ id }) => {
             cy="8"
             r="2.25"
             stroke="#36363D"
-            stroke-linecap="round"
+            strokeLinecap="round"
           />
           <rect
             x="2"
@@ -135,9 +135,9 @@ const SvgGenerator = ({ id }) => {
             rx="2"
             stroke="#36363D"
           />
-          <path d="M6.75 7.25H11.25" stroke="#36363D" stroke-linecap="round" />
-          <path d="M6.75 10.25H11.25" stroke="#36363D" stroke-linecap="round" />
-          <path d="M6.75 13.25H9.75" stroke="#36363D" stroke-linecap="round" />
+          <path d="M6.75 7.25H11.25" stroke="#36363D" strokeLinecap="round" />
+          <path d="M6.75 10.25H11.25" stroke="#36363D" strokeLinecap="round" />
+          <path d="M6.75 13.25H9.75" stroke="#36363D" strokeLinecap="round" />
         </svg>
       );
     default:

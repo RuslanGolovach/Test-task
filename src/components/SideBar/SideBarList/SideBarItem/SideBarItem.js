@@ -19,7 +19,7 @@ const SideBarItem = ({ id, description, quantity, onClick, isActive }) => {
   return (
     <Li onClick={onLiClick}>
       <IconWrapper>
-        <SvgGenerator id={icons[description]} color="red" />
+        <SvgGenerator id={icons[description]} />
         <Description>{description}</Description>
       </IconWrapper>
       <Quantity>{quantity}</Quantity>
