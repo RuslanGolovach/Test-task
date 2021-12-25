@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const Item = styled.li`
   display: flex;
@@ -18,6 +18,16 @@ const Item = styled.li`
   }
 `;
 
+const scale = keyframes`
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+`;
+
 const ActiveItem = styled(Item)`
   &: before {
     position: absolute;
@@ -26,7 +36,9 @@ const ActiveItem = styled(Item)`
     width: 4px;
     height: 32px;
     background-color: #ffc700;
+    animation: ${scale} 250ms linear;
   }
+
   & svg *[stroke] {
     stroke: #ffc700;
   }
