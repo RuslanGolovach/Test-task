@@ -8,6 +8,7 @@ const SideBarList = ({ data }) => {
   const onClick = id => {
     setIsActive(id);
   };
+
   return (
     <Ul>
       {data.map(({ id, ...props }) => (

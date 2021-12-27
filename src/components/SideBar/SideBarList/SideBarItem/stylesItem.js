@@ -16,6 +16,8 @@ const Item = styled.li`
   &: not(: last-child) {
     margin-bottom: 20px;
   }
+
+  // ${props => (props.isActive ? `` : ``)}
 `;
 
 const scale = keyframes`

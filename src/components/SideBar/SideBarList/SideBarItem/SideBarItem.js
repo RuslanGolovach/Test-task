@@ -1,5 +1,4 @@
 import React from 'react';
-import icons from './icons';
 import SvgGenerator from './SvgGenerator';
 
 import {
@@ -19,7 +18,7 @@ const SideBarItem = ({ id, description, quantity, onClick, isActive }) => {
   return (
     <Li onClick={onLiClick}>
       <IconWrapper>
-        <SvgGenerator id={icons[description]} />
+        <SvgGenerator id={id} />
         <Description>{description}</Description>
       </IconWrapper>
       <Quantity>{quantity}</Quantity>
