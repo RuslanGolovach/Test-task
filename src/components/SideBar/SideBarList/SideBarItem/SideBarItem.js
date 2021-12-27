@@ -1,28 +1,27 @@
 import React from 'react';
-import SvgGenerator from './SvgGenerator';
 
-import {
-  Item,
-  IconWrapper,
-  Description,
-  Quantity,
-  ActiveItem,
-} from './stylesItem';
+import { Item, IconWrapper, Description, Quantity } from './stylesItem';
 
-const SideBarItem = ({ id, description, quantity, onClick, isActive }) => {
-  const Li = isActive === id ? ActiveItem : Item;
+const SideBarItem = ({
+  id,
+  description,
+  quantity,
+  Icon,
+  onClick,
+  isActive,
+}) => {
   const onLiClick = () => {
     onClick(id);
   };
 
   return (
-    <Li onClick={onLiClick}>
+    <Item onClick={onLiClick} isActive={isActive}>
       <IconWrapper>
-        <SvgGenerator id={id} />
+        <Icon />
         <Description>{description}</Description>
       </IconWrapper>
       <Quantity>{quantity}</Quantity>
-    </Li>
+    </Item>
   );
 };
 

@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 const Item = styled.li`
   display: flex;
@@ -17,28 +17,17 @@ const Item = styled.li`
     margin-bottom: 20px;
   }
 
-  // ${props => (props.isActive ? `` : ``)}
-`;
-
-const scale = keyframes`
-  from {
-    transform: scaleY(0);
-  }
-
-  to {
-    transform: scaleY(1);
-  }
-`;
-
-const ActiveItem = styled(Item)`
-  &: before {
+  ${props =>
+    props.isActive
+      ? ` &: before {
     position: absolute;
     left: 0;
     content: '';
     width: 4px;
     height: 32px;
     background-color: #ffc700;
-    animation: ${scale} 250ms linear;
+    transform: scaleY(1);
+    transition: all 250ms linear;
   }
 
   & svg *[stroke] {
@@ -46,7 +35,17 @@ const ActiveItem = styled(Item)`
   }
   & svg *[fill] {
     fill: #ffc700;
-  }
+  }`
+      : `&: before {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 4px;
+    height: 32px;
+    background-color: #ffc700;
+    transform: scaleY(0);
+    transition: all 250ms linear;
+  }`}
 `;
 
 const IconWrapper = styled.div`
@@ -63,4 +62,4 @@ const Quantity = styled.p`
   margin: 0;
 `;
 
-export { Item, IconWrapper, Description, Quantity, ActiveItem };
+export { Item, IconWrapper, Description, Quantity };

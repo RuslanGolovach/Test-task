@@ -17,7 +17,7 @@ const SideBarList = ({ data }) => {
           id={id}
           {...props}
           onClick={onClick}
-          isActive={isActive}
+          isActive={isActive === id}
         />
       ))}
     </Ul>
